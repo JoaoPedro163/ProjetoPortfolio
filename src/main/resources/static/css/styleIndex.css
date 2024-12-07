@@ -49,3 +49,28 @@
 #titleServicos{
     text-align: center;
 }
+
+#divServicos{
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.colunasServicos{
+    width: 37%;
+    height: 10rem;
+    background-color: #6A4C9C;
+}
+
+.colunasServicosEsq{
+    width: 37%;
+    height: 10rem;
+    background-color: #6A4C9C;
+    margin-left: 1%;
+}
+
+.divParagrafoServicos{
+    margin: auto;
+    text-align: center;
+    margin-top: 13%;
+}
+
