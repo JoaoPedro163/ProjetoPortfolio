@@ -1,0 +1,51 @@
+#cabecalho{
+    background-color: #6A4C9C;
+    height: 600px;
+}
+
+#imgAutismo{
+    width: 80px;
+    height: 100px;
+    margin-top: 5%;
+}
+
+#coluna_1_cabecalho{
+    margin-left: 5%;
+}
+
+#titleCabecalho{
+    font-size: 36px;
+}
+
+#paragrafoCabecalho{
+    font-size: 32px;
+}
+
+#conteudoCabecalho{
+    margin-left: 5%;
+    color: white;
+    margin-top: 2%;
+}
+
+#btnCabecalho{
+    font-size: 25px;
+    background-color: #29A33C;
+    border-radius: 30px;
+    text-align: center;
+    width: 30%;
+    margin-top:5%;
+}
+
+#divBtnCabecalho{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#servicos{
+    margin-top:4%;
+    font-size: 40px;
+}
+
+#titleServicos{
+    text-align: center;
+}

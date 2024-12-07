@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}"/>
+
+        <link rel="stylesheet" th:href="@{/css/styleIndex.css}"/>
+    </head>
+
+    <body style="background-color: #A59CD6;">
+
+        <div class="row" id="cabecalho">
+            <div class="container">
+                <div class="col-sm-6" id="coluna_1_cabecalho">
+
+                    <div id="divImagemAutismo">
+                        <img th:src="@{/images/autismo.png}" id="imgAutismo"/>
+                    </div>
+
+                    <div id="conteudoCabecalho">
+
+                        <h1 id="titleCabecalho">Aprender é um direito de todos</h1>
+                        <p id="paragrafoCabecalho">
+                            Agende agora mesmo uma consulta e descubra como posso ajudar 
+                            seu filho a superar desafios e alcançar seu pleno potencial
+                        </p>
+
+                    </div>
+
+                    <div id="divBtnCabecalho">
+                        <button class="btn btn-success" id="btnCabecalho">Contato</button>    
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6"  id="coluna_2_cabecalho">
+                    <img/>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row" id="servicos"> 
+                <h1 id="titleServicos">O que posso fazer pelo seu filho ?</h1>
+            </div>
+
+
+            <div class="row" style="justify-content: center; margin-top: 5%;">
+
+                <div class="col-sm-6" style="width: 37%; height: 10rem; background-color: #6A4C9C;">
+                    <div style="margin: auto; text-align: center; margin-top: 13%;">
+                        <p style="color:white;">Intervenção em dificuldades de aprendizagem</p>    
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6" style="width: 37%; height: 10rem; background-color: #6A4C9C; margin-left: 1%;">
+                    <div style="margin: auto; text-align: center; margin-top: 13%;">
+                        <p style="color: white;">Avaliação psicopedagógica</p>    
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 1%; justify-content: center;">
+
+                <div class="col-sm-6" style="width: 37%; height: 10rem; background-color: #6A4C9C;">
+                    <div style="margin: auto; text-align: center; margin-top: 13%;">
+                        <p style="color:white;">Orientação a pais e professores</p> 
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6" style="width: 37%; height: 10rem; background-color: #6A4C9C;margin-left: 1%;">
+                    <div style="margin: auto; text-align: center; margin-top: 13%;">
+                        <p style="color:white;">Estímulo ao Desenvolvimento Escolar</p>    
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div style="background-color: #6A4C9C;">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <h1>Quem sou eu ?</h1>
+                    <p>
+                        Sou Cintia, psicopedagoga especializada em ajudar crianças a superarem desafios de aprendizagem e desenvolvimento. Com formação em Psicopedagogia Clínica e Institucional, e avançada em ABA (Análise do Comportamento Aplicada) e Comunicação Alternativa, meu método de trabalho é baseado em ABA, uma abordagem eficaz para promover mudanças comportamentais e desenvolver habilidades essenciais para a aprendizagem. 
+
+                        Acredito que cada criança tem um potencial único, e estou aqui para ser parceira no processo de superação de dificuldades e crescimento.
+                        Vamos juntos transformar desafios em conquistas?
+                    </p>
+                </div>
+
+                <div class="col-sm-6">
+                    <img/>
+                </div>
+            </div>
+
+            <div class="row">
+                <button class="btn btn-success">Agendar Consulta</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="row">
+                <h1>Metodologia ABA</h1>
+            </div>
+
+            <div class="row">
+                <p>
+                    ABA (Análise do Comportamento Aplicada, ou Applied Behavior Analysis) é uma abordagem científica voltada para entender e modificar comportamentos. Muito utilizada no trabalho com pessoas com Transtorno do Espectro Autista (TEA) e outros desafios de desenvolvimento,
+                    a metodologia ABA é baseada em princípios da ciência comportamental para promover habilidades funcionais e melhorar a qualidade de vida.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div class="row">
+                <h1>Como a ABA é aplicada?</h1>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-4">
+
+                    <img/>
+
+                    <h3>Habilidades de comunicação</h3>
+
+                    <p>Ensinar formas eficazes de expressar necessidades e sentimentos.</p>
+                </div>
+
+                <div class="col-sm-4">
+
+                    <img/>
+
+                    <h3>Habilidades sociais</h3>
+
+                    <p>Promover interações positivas e funcionais com outras pessoas.</p>
+                </div>
+
+                <div class="col-sm-4">
+
+                    <img/>
+
+                    <h3>Rotinas diárias</h3>
+
+                    <p>Desenvolver autonomia em atividades como alimentação, higiene e organização.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <h2>O que nossos pacientes tem a dizer ?</h2>
+
+        <div class="row" style="background-color: #6A4C9C;">
+
+            <p>“Antes ele não tinha noção do que era os sons das letras, hoje ele sabe ler as palavras pelo seus sons.”</p>
+
+            <video width="828" height="390" controls="">
+                <source/>
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+
+            <p>"Tá ótimo viu, tá ótimo, não tenho do que reclamar, ele não está travando tanto quanto estava na leitura, 
+                está lendo muito bem.[...] em relação as consultas, até falei para ele que ele vai ficar com a Cíntia 
+                até quando tiver 20 anos viu rss. 
+                Ele está muito bem viu, até o conversar já melhorou um pouco pois ele era muito travado para falar com as pessoas"
+            </p>
+
+            <p>Relato da mãe de um de nossos pacientes</p>
+        </div>
+
+        <h2>Está pronto(a) para transformar o aprendizado do seu filho ?</h2>
+
+        <div class="row">
+
+            <div class="col-sm-6">
+                <img/>
+
+                <p>Fale comigo através do meu whatsapp
+                    (16) 98821-5068
+                    ou
+                    Clique no ícone do Whatsapp
+                </p>
+
+            </div>
+
+            <div class="col-sm-6">
+
+                <img/>
+
+                <p>Me siga no Instagram @cintiapsicop.souza</p>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
