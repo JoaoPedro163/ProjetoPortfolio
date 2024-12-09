@@ -1,6 +1,6 @@
 #cabecalho{
     background-color: #6A4C9C;
-    height: 600px;
+    min-height: 600px;
 }
 
 #imgAutismo{
@@ -10,15 +10,18 @@
 }
 
 #coluna_1_cabecalho{
-    margin-left: 5%;
+    margin-top: 3%;
+    padding-left: 4%;
 }
 
 #titleCabecalho{
     font-size: 36px;
+    font-family: 'Alfa Slab One', 'Sans-serif';
 }
 
 #paragrafoCabecalho{
     font-size: 32px;
+    font-family: 'Nunito', 'Sans-serif';
 }
 
 #conteudoCabecalho{
@@ -34,6 +37,7 @@
     text-align: center;
     width: 30%;
     margin-top:5%;
+    font-family: 'Nunito', 'Sans-serif';
 }
 
 #divBtnCabecalho{
@@ -48,6 +52,7 @@
 
 #titleServicos{
     text-align: center;
+    font-family: 'Raleway', 'Sans-serif';
 }
 
 #divServicos{
@@ -57,8 +62,9 @@
 
 .colunasServicos{
     width: 37%;
-    height: 10rem;
+    min-height: 10rem;
     background-color: #6A4C9C;
+    box-shadow: 5px 4px 1px #603F75;
 }
 
 .colunasServicosEsq{
@@ -74,3 +80,220 @@
     margin-top: 13%;
 }
 
+#divQuemSouEu{
+    margin-top: 8%;
+    color: white;
+    width: 100%;
+}
+
+#titleQuemSouEu{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 4%;
+    font-family: 'Raleway', 'Sans-serif';
+}
+
+#descricaoQuemSouEu{
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Nunito', 'Sans-serif';
+}
+
+#divCol1{
+    margin-left: 5%;
+    margin: auto;
+    margin-top: 8%;
+}
+
+#btnAgendar{
+    width: 30%;
+    background-color: #29A33C;
+    font-family: 'Nunito', 'Sans-serif';
+}
+
+#divBtnAgendar{
+    justify-content: center;
+    margin-top: 4%;
+}
+
+#imgCintia{
+    width: 313px;
+    height: 286px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#divCol2Imagem{
+    margin-top: 8%;
+}
+
+#imagemCrianca{
+    width: 600px;
+    height: 550px;
+}
+
+#divTitleAba{
+    text-align: center;
+    margin-top: 7%;
+}
+
+#titleAba{
+    font-size: 36px;
+    font-family: 'Raleway', 'Sans-serif';
+}
+
+#rowTitleAba{
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Raleway', 'Sans-serif';
+}
+
+#descricaoAba{
+    font-family: 'Nunito', 'Sans-serif';
+    font-size: 18px;
+    margin-top: 3%;
+}
+
+#rowAba{
+    background-color: #6A4C9C;
+    justify-content: center;
+    color: white;
+    margin-top: 2%;
+    min-height: 250px;
+}
+
+.col_aba{
+    margin-top: 2%;
+}
+
+.col_aba_img{
+    text-align: center;
+}
+
+.imgAba{
+    width: 87px;
+    height: 78px;
+}
+
+.subTitles_aba{
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Raleway', 'Sans-serif';
+}
+
+.p_aba{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Nunito', 'Sans-serif';
+}
+
+#titleDepoimentos{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Raleway', 'Sans-serif';
+}
+
+.depoimento{
+    text-align: center;
+    font-size: 24px;
+    color:white;
+    width: 50%;
+    margin: auto;
+    margin-top: 4%;
+    font-family: 'Nunito', 'Sans-serif';
+}
+
+#divVideo{
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#video{
+    width: 100%;
+}
+
+#autor_depoimento{
+    text-align: center;
+    margin-top: 1%;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 4%;
+    font-family: 'Nunito', 'Sans-serif';
+}
+
+#titleContatos{
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Raleway', 'Sans-serif';
+}
+
+#rowContatos{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+.col_contatos{
+    text-align: center;
+}
+
+.img_contato{
+    width: 74px;
+    height: 74px
+}
+
+.txtContatos{
+    font-family: 'Nunito', 'Sans-serif';
+    color: #000000;
+}
+
+.linkContatos{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 575px){
+    
+    body{
+        overflow-x: hidden;
+    }
+    
+    #imagemCrianca{
+        display: none;
+    }
+
+    #titleCabecalho{
+        font-size: 36px;
+        font-family: 'Alfa Slab One', 'Sans-serif';
+        width: 100%;
+    }
+
+    #paragrafoCabecalho{
+        font-size: 30px;
+        font-family: 'Nunito', 'Sans-serif';
+    }
+
+    #divCol2Imagem{
+        text-align: center;
+    }
+
+    #imgCintia{
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .depoimento{
+        text-align: center;
+        font-size: 24px;
+        color:white;
+        width: 100%;
+        margin: auto;
+        margin-top: 4%;
+        font-family: 'Nunito', 'Sans-serif';
+    }
+}

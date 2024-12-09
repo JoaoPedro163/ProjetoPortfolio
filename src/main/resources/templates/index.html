@@ -2,47 +2,54 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>TODO supply a title</title>
+        <title>Psicopedagoga Cintia</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}"/>
 
+        <!--Links estilização-->
         <link rel="stylesheet" th:href="@{/css/styleIndex.css}"/>
+
+        <!--Fontes da página-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     </head>
 
     <body style="background-color: #A59CD6;">
 
         <div class="row" id="cabecalho">
-            <div class="container">
-                <div class="col-sm-6" id="coluna_1_cabecalho">
 
-                    <div id="divImagemAutismo">
-                        <img th:src="@{/images/autismo.png}" id="imgAutismo"/>
-                    </div>
+            <div class="col-sm-6" id="coluna_1_cabecalho">
 
-                    <div id="conteudoCabecalho">
+                <div id="divImagemAutismo">
+                    <img th:src="@{/images/autismo.png}" id="imgAutismo"/>
+                </div>
 
-                        <h1 id="titleCabecalho">Aprender é um direito de todos</h1>
-                        <p id="paragrafoCabecalho">
-                            Agende agora mesmo uma consulta e descubra como posso ajudar 
-                            seu filho a superar desafios e alcançar seu pleno potencial
-                        </p>
+                <div id="conteudoCabecalho">
 
-                    </div>
-
-                    <div id="divBtnCabecalho">
-                        <button class="btn btn-success" id="btnCabecalho">Contato</button>    
-                    </div>
+                    <h1 id="titleCabecalho">Aprender é um direito de todos</h1>
+                    <p id="paragrafoCabecalho">
+                        Agende agora mesmo uma consulta e descubra como posso ajudar 
+                        seu filho a superar desafios e alcançar seu pleno potencial
+                    </p>
 
                 </div>
 
-                <div class="col-sm-6"  id="coluna_2_cabecalho">
-                    <img/>
+                <div id="divBtnCabecalho">
+                    <a href="https://wa.me/5516988215068?text=Oi%20gostaria%20de%20mais%20informações" target="blank" class="linkContatos">
+                        <button class="btn btn-success" id="btnCabecalho">Contato</button>
+                    </a>
                 </div>
 
             </div>
 
+            <div class="col-sm-6"  id="coluna_2_cabecalho">
+                <img th:src="@{/images/imagem_crianca.png}" id="imagemCrianca"/>
+            </div>
+
         </div>
+
         <div class="container">
             <div class="row" id="servicos"> 
                 <h1 id="titleServicos">O que posso fazer pelo seu filho ?</h1>
@@ -52,15 +59,15 @@
             <div class="row" id="divServicos">
 
                 <div class="col-sm-6 colunasServicos">
-                    <div class="divParagrafroServicos">
-                        <p style="color:white;">Intervenção em dificuldades de aprendizagem</p>    
+                    <div class="divParagrafroServicos" style="text-align: center; margin-top: 13%; font-family: 'Nunito', 'Sans-serif';">
+                        <p style="color:white; font-size:16px;">Intervenção em dificuldades de aprendizagem</p>    
                     </div>
 
                 </div>
 
-                <div class="col-sm-6 colunasServicosEsq">
-                    <div class="divParagrafroServicos">
-                        <p style="color: white;">Avaliação psicopedagógica</p>    
+                <div class="col-sm-6 colunasServicosEsq colunasServicos">
+                    <div class="divParagrafroServicos" style="text-align: center; margin-top: 13%; font-family: 'Nunito', 'Sans-serif';">
+                        <p style="color: white; font-size: 18px;">Avaliação psicopedagógica</p>    
                     </div>
 
                 </div>
@@ -68,17 +75,17 @@
 
             <div class="row" style="margin-top: 1%; justify-content: center;">
 
-                <div class="col-sm-6 colunasServicos">
-                    <div class="divParagrafroServicos">
-                        <p style="color:white;">Orientação a pais e professores</p> 
+                <div class="col-sm-6 colunasServicos" style="box-shadow: 5px 4px 1px #603F75;">
+                    <div class="divParagrafroServicos"style="text-align: center; margin-top: 13%;font-family: 'Nunito', 'Sans-serif';">
+                        <p style="color:white;font-size: 18px;">Orientação a pais e professores</p> 
                     </div>
 
                 </div>
 
-                <div class="col-sm-6 colunasServicosEsq">
-                    
-                    <div class="divParagrafroServicos">
-                        <p style="color:white;">Estímulo ao Desenvolvimento Escolar</p>    
+                <div class="col-sm-6 colunasServicosEsq colunasServicos">
+
+                    <div class="divParagrafroServicos" style="text-align: center; margin-top: 13%;font-family: 'Nunito', 'Sans-serif';">
+                        <p style="color:white;font-size: 18px;">Estímulo ao Desenvolvimento Escolar</p>    
                     </div>
 
                 </div>
@@ -86,120 +93,158 @@
 
         </div>
 
-        <div style="background-color: #6A4C9C;">
+        <div style="background-color: #6A4C9C;" id="divQuemSouEu">
             <div class="row">
 
-                <div class="col-sm-6">
-                    <h1>Quem sou eu ?</h1>
-                    <p>
-                        Sou Cintia, psicopedagoga especializada em ajudar crianças a superarem desafios de aprendizagem e desenvolvimento. Com formação em Psicopedagogia Clínica e Institucional, e avançada em ABA (Análise do Comportamento Aplicada) e Comunicação Alternativa, meu método de trabalho é baseado em ABA, uma abordagem eficaz para promover mudanças comportamentais e desenvolver habilidades essenciais para a aprendizagem. 
+                <div class="col-sm-7" id="divCol1">
+
+                    <h1 id="titleQuemSouEu">Quem sou eu ?</h1>
+                    <p id="descricaoQuemSouEu">
+                        Sou Cintia, psicopedagoga especializada em ajudar crianças a superarem desafios de aprendizagem e desenvolvimento. Com formação em Psicopedagogia Clínica
+                        e Institucional, e avançada em ABA (Análise do Comportamento Aplicada) e Comunicação Alternativa, meu método de trabalho é baseado em ABA, uma abordagem 
+                        eficaz para promover mudanças comportamentais e desenvolver habilidades essenciais para a aprendizagem. 
 
                         Acredito que cada criança tem um potencial único, e estou aqui para ser parceira no processo de superação de dificuldades e crescimento.
                         Vamos juntos transformar desafios em conquistas?
                     </p>
+
+                    <div class="row" id="divBtnAgendar">
+                        <a href="https://wa.me/5516988215068?text=Oi%20gostaria%20de%20mais%20informações" target="blank" class="linkContatos btn btn-success" id="btnAgendar">
+                            Agendar Consulta
+                        </a>
+                    </div>
+
                 </div>
 
-                <div class="col-sm-6">
-                    <img/>
+                <div class="col-sm-4" id="divCol2Imagem">
+                    <img th:src="@{/images/imagem_cintia.jpeg}" id="imgCintia"/>
                 </div>
             </div>
 
-            <div class="row">
-                <button class="btn btn-success">Agendar Consulta</button>
-            </div>
+
         </div>
 
-        <div>
-            <div class="row">
-                <h1>Metodologia ABA</h1>
+        <div class="container">
+            <div class="row" id="divTitleAba">
+                <h1 id="titleAba">Metodologia ABA</h1>
             </div>
 
             <div class="row">
-                <p>
-                    ABA (Análise do Comportamento Aplicada, ou Applied Behavior Analysis) é uma abordagem científica voltada para entender e modificar comportamentos. Muito utilizada no trabalho com pessoas com Transtorno do Espectro Autista (TEA) e outros desafios de desenvolvimento,
+                <p id="descricaoAba">
+                    ABA (Análise do Comportamento Aplicada, ou Applied Behavior Analysis) é uma abordagem científica voltada para entender e modificar comportamentos. 
+                    Muito utilizada no trabalho com pessoas com Transtorno do Espectro Autista (TEA) e outros desafios de desenvolvimento,
                     a metodologia ABA é baseada em princípios da ciência comportamental para promover habilidades funcionais e melhorar a qualidade de vida.
                 </p>
             </div>
         </div>
 
         <div>
-            <div class="row">
+            <div class="row" id="rowTitleAba">
                 <h1>Como a ABA é aplicada?</h1>
             </div>
 
-            <div class="row">
+            <div class="row" id="rowAba">
 
-                <div class="col-sm-4">
+                <div class="col-sm-3 col_aba">
+                    <div class="col_aba_img">
+                        <img th:src="@{/images/comunicacao.png}" class="imgAba"/>
+                    </div>
 
-                    <img/>
+                    <h3 class="subTitles_aba">
+                        <strong>Habilidades de comunicação</strong>
+                    </h3>
 
-                    <h3>Habilidades de comunicação</h3>
-
-                    <p>Ensinar formas eficazes de expressar necessidades e sentimentos.</p>
+                    <p class="p_aba">Ensinar formas eficazes de expressar necessidades e sentimentos.</p>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-3 col_aba">
 
-                    <img/>
+                    <div class="col_aba_img">
+                        <img th:src="@{/images/social.png}" class="imgAba"/>
 
-                    <h3>Habilidades sociais</h3>
+                    </div>
 
-                    <p>Promover interações positivas e funcionais com outras pessoas.</p>
+                    <h3 class="subTitles_aba">
+                        <strong>Habilidades sociais</strong>
+                    </h3>
+
+                    <p class="p_aba">Promover interações positivas e funcionais com outras pessoas.</p>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-3 col_aba">
 
-                    <img/>
+                    <div class="col_aba_img">
+                        <img th:src="@{/images/rotina.png}" class="imgAba"/>
+                    </div>
 
-                    <h3>Rotinas diárias</h3>
+                    <h3 class="subTitles_aba">
+                        <strong>Rotinas diárias</strong>
+                    </h3>
 
-                    <p>Desenvolver autonomia em atividades como alimentação, higiene e organização.</p>
+                    <p class="p_aba">Desenvolver autonomia em atividades como alimentação, higiene e organização.</p>
+
                 </div>
 
             </div>
 
         </div>
 
-        <h2>O que nossos pacientes tem a dizer ?</h2>
+        <h2 id="titleDepoimentos">O que nossos pacientes tem a dizer ?</h2>
 
         <div class="row" style="background-color: #6A4C9C;">
 
-            <p>“Antes ele não tinha noção do que era os sons das letras, hoje ele sabe ler as palavras pelo seus sons.”</p>
+            <p class="depoimento">“Antes ele não tinha noção do que era os sons das letras, hoje ele sabe ler as palavras pelo seus sons.”</p>
 
-            <video width="828" height="390" controls="">
-                <source/>
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
+            <div class="row">
 
-            <p>"Tá ótimo viu, tá ótimo, não tenho do que reclamar, ele não está travando tanto quanto estava na leitura, 
-                está lendo muito bem.[...] em relação as consultas, até falei para ele que ele vai ficar com a Cíntia 
-                até quando tiver 20 anos viu rss. 
-                Ele está muito bem viu, até o conversar já melhorou um pouco pois ele era muito travado para falar com as pessoas"
-            </p>
+                <div id="divVideo">
 
-            <p>Relato da mãe de um de nossos pacientes</p>
-        </div>
+                    <video id="video" controls="">
+                        <source th:src="@{/videos/prova_social.mp4}" type="video/mp4"/>
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
 
-        <h2>Está pronto(a) para transformar o aprendizado do seu filho ?</h2>
+                </div>
 
-        <div class="row">
+            </div>
 
-            <div class="col-sm-6">
-                <img/>
-
-                <p>Fale comigo através do meu whatsapp
-                    (16) 98821-5068
-                    ou
-                    Clique no ícone do Whatsapp
+            <div class="row">
+                <p class="depoimento">"Tá ótimo viu, tá ótimo, não tenho do que reclamar, ele não está travando tanto quanto estava na leitura, 
+                    está lendo muito bem.[...] em relação as consultas, até falei para ele que ele vai ficar com a Cíntia 
+                    até quando tiver 20 anos viu rss. 
+                    Ele está muito bem viu, até o conversar já melhorou um pouco pois ele era muito travado para falar com as pessoas"
                 </p>
 
             </div>
 
-            <div class="col-sm-6">
+            <p id="autor_depoimento">Relato da mãe de um de nossos pacientes</p>
+        </div>
 
-                <img/>
+        <h2 id="titleContatos">Está pronto(a) para transformar o aprendizado do seu filho ?</h2>
 
-                <p>Me siga no Instagram @cintiapsicop.souza</p>
+        <div class="row" id="rowContatos">
+
+            <div class="col-sm-6 col_contatos">
+                <a href="https://wa.me/5516988215068?text=Oi%20gostaria%20de%20mais%20informações" target="blank" class="linkContatos">
+                    <img th:src="@{/images/whatsapp.png}" class="img_contato"/>
+
+                    <p class="txtContatos">Fale comigo através do meu whatsapp
+                        (16) 98821-5068
+                        ou
+                        Clique no ícone do Whatsapp
+                    </p>
+
+                </a>
+
+            </div>
+
+            <div class="col-sm-6 col_contatos">
+                <a href="https://www.instagram.com/cintiapsicop.souza" class="linkContatos">
+                    <img th:src="@{/images/instagram.png}" class="img_contato"/>
+
+                    <p class="txtContatos">Me siga no Instagram @cintiapsicop.souza</p>
+
+                </a>
 
             </div>
 
